@@ -15,7 +15,7 @@ int main(int argc, char** argv) {
 
         fast_io::obuf_file f{ fn };
         for (size_t i{}; i != 60000000; ++i) {
-            println(fixed(dist(g)));
+            println(f, fixed(dist(g)));
         }
     } catch (fast_io::error& e) {
         println("IO error: ", e);
